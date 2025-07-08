@@ -7,31 +7,51 @@
 </head>
 <body>
 
-  <!-- Your provided form HTML here  -->
-  <!-- Keep it unchanged -->
+  <div class="form-container">
+    <p class="title">Login</p>
+    <form class="form">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
 
-  <form class="form">
-    <p class="form-title">Sign in to your account</p>
-    <div class="input-container">
-      <input placeholder="Enter email" type="email">
-      <span>
-        <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 ..."></path>
-        </svg>
-      </span>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+        <div class="forgot">
+          <a href="#">Forgot Password?</a>
+        </div>
+      </div>
+
+      <button type="submit" class="sign">Sign in</button>
+    </form>
+
+    <div class="social-message">
+      <div class="line"></div>
+      <p class="message">Login with social accounts</p>
+      <div class="line"></div>
     </div>
-    <div class="input-container">
-      <input placeholder="Enter password" type="password">
-      <span>
-        <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-          <path d="M2.458 12C3.732 7.943 7.523 5 ..."></path>
+
+    <div class="social-icons">
+      <button aria-label="Google login" class="icon">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current">
+          <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901..."/>
         </svg>
-      </span>
+      </button>
+      <button aria-label="Twitter login" class="icon">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current">
+          <path d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765..."/>
+        </svg>
+      </button>
+      <button aria-label="GitHub login" class="icon">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current">
+          <path d="M16 0.396c-8.839 0-16 7.167-16 16..."/>
+        </svg>
+      </button>
     </div>
-    <button class="submit" type="submit">Sign in</button>
-    <p class="signup-link">No account? <a href="">Sign up</a></p>
-  </form>
+
+    <p class="signup">Don't have an account? <a href="#">Sign up</a></p>
+  </div>
 
   <script src="login.js"></script>
 </body>

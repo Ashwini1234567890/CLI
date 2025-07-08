@@ -1,35 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".form");
-  const emailInput = form.querySelector('input[type="email"]');
-  const passwordInput = form.querySelector('input[type="password"]');
+  const emailInput = document.getElementById("email");
+  const passwordInput = document.getElementById("password");
 
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
 
-    // Email validation
     if (!validateEmail(email)) {
-      alert("⚠️ Please enter a valid email address.");
+      showAlert("⚠️ Please enter a valid email.");
       emailInput.focus();
       return;
     }
 
-    // Password validation
     if (password.length < 6) {
-      alert("🔒 Password must be at least 6 characters long.");
+      showAlert("🔒 Password must be at least 6 characters.");
       passwordInput.focus();
       return;
     }
 
-    // Simulated login success
-    alert(`✅ Login successful!\n📧 Email: ${email}`);
-    form.reset(); // Clear form after success
+    // Success
+    alert(`✅ Welcome back!\nEmail: ${email}`);
+    form.reset();
   });
 
   function validateEmail(email) {
-    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return pattern.test(email.toLowerCase());
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email.toLowerCase());
+  }
+
+  function showAlert(message) {
+    alert(message);
   }
 });
