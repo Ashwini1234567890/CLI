@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #0f172a;
+  background-color: hsl(223, 11%, 88%);
   display: flex;
   justify-content: center;
   align-items: center;
