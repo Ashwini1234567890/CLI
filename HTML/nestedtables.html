@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Tables</title>
+</head>
+<body>
+<table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+        <tr>
+            <td colspan="3" style="text-align: center; font-weight: bold;">Department</td>
+        </tr>
+        <tr>
+           <td>
+            <table border="1" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td colspan="3" style="text-align: center; font-weight: bold;">IT Department</td>
+                    </tr>
+                    <tr>
+                        <td><b>Employee Name</b></td>
+                        <td><b>Position</b></td>
+                        <td><b>Work Location</b></td>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Software Engineer</td>
+                        <td>Remote</td>
+                    </tr>
+                </tbody>
+            </table>
+        <tr>
+            <td>
+                <table border="1" cellpadding="5" cellspacing="0">
+
+                        <tr>
+                            <td colspan="3" style="text-align: center; font-weight: bold;">HR Department</td>
+                        </tr>
+                        <tr>
+                            <td><b>Employee Name</b></td>
+                            <td><b>Position</b></td>
+                            <td><b>Work Location</b></td>
+                        </tr>
+                    <tbody>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>HR Manager</td>
+                            <td>On-site</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    <tbody>
+        <tr>
+            <td>IT</td>
+            <td>John Doe</td>
+            <td>Building A</td>
+        </tr>
+        <tr>
+            <td>HR</td>
+            <td>Jane Smith</td>
+            <td>Building B</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
