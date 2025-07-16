@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms with Table</title>
+</head>
+<body>
+    <h1>Forms with Table</h1>
+    <form action="#" method="post" enctype="multipart/form-data" auto-complete="off" required>
+        <table border="1" cellpadding="6" cellspacing="0">
+            <tr>
+                <th>First Name</th>
+                <td><input type="text" name="first_name" id="first_name" placeholder="Enter your first name" required></td>
+            </tr>
+            <tr>
+                <th>Middle Name</th>
+                <td><input type="text" name="middle_name" id="middle_name" placeholder="Enter your middle name" required></td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td><input type="text" name="last_name" id="last_name" placeholder="Enter your last name" required></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email" id="email" placeholder="Example@gmail.com" required></td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td>
+                    
+                    <select name="country" id="country" required>
+                        <option value="">Select your country code</option>
+                        <option value="USA">+647</option>
+                        <option value="Canada">+041</option>
+                        <option value="India">+042</option>
+                        <option value="UK">+043</option>
+                    </select>
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="Enter your phone number" required>
+                    <label for="country"></label>
+
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><textarea name="address" id="address" placeholder="Enter your address" rows="4" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <th>Profile Picture</th>
+                <td><input type="file" name="profile_picture" id="profile_picture" required></td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td><input type="date" name="dob" id="dob" required></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" value="other" required>
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Hobbies</th>
+                <td>
+                    <input type="checkbox" name="hobbies" id="reading" value="reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" name="hobbies" id="traveling" value="traveling">
+                    <label for="traveling">Traveling</label>
+                    <input type="checkbox" name="hobbies" id="gaming" value="gaming">
+                    <label for="gaming">Gaming</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>
+                    <select name="country" id="country" required>
+                        <option value="">Select your country</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="india">India</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Enter your comments here..." required></textarea>
+        <br>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
