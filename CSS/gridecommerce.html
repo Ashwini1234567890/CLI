@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid E-commerce Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+        }
+        header {
+            background-color: lightblue;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        .product img {
+            max-width: 100%;
+            height: 300px;
+        }
+        .product h2 {
+            font-size: 1.5em;
+        }
+        .product p {
+            font-size: 1em;
+        }
+        .price {
+            font-weight: bold;
+            color: green;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: lightblue;
+            color: white;
+        }
+        footer a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+    </head>
+<body>
+     <header>
+        <h1>My E-commerce Store</h1>
+        <br>
+        
+            <ul style="list-style-type: none; display: flex; gap: 10px; margin: 0; padding: 0;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <br>
+    </header>
+    <br>
+    <main>
+        <section class="product">
+            <img src="https://cdn.zeptonow.com/production/cms/category/031c2a24-d40f-4272-8c71-8a566252495e.png" alt="Product 1">
+            <h2>Iced Americano</h2>
+            <p>A refreshing iced coffee beverage.</p>
+            <span class="price">$19.99</span>
+            <button>Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://cdn.zeptonow.com/production/cms/category/ec7b14c6-2640-4165-b3ae-68c09a249ae0.png" alt="Product 2">
+            <h2>Sweets and Chocolates</h2>
+            <p>A delightful assortment of sweets and chocolates.</p>
+            <span class="price">$29.99</span>
+            <button>Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://cdn.zeptonow.com/production/cms/category/8d4d3977-5197-49d9-9867-8a670524e48b.png" alt="Product 3">
+            <h2>Masala and DryFruits</h2>
+            <p>Aromatic spices and premium dry fruits.</p>
+            <span class="price">$39.99</span>
+            <button>Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://cdn.zeptonow.com/production/cms/category/38047553-95f3-47c6-a1ff-4794e1227d3a.png" alt="Product 4">
+            <h2>Fruits and Vegetables</h2>
+            <p>Fresh and organic fruits and vegetables.</p>
+            <span class="price">$49.99</span>
+            <button>Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://cdn.zeptonow.com/production/cms/category/dc4a299d-521f-4a64-8205-c5ba8e1d13e3.png" alt="Product 5">
+            <h2>Atta and Rice</h2>
+            <p>High-quality wheat flour and rice.</p>
+            <span class="price">$59.99</span>
+            <button>Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://cdn.zeptonow.com/production/cms/category/8d4fb022-bae0-432d-92c8-2b12d97ee6cc.png" alt="Product 6">
+            <h2>Toys and Sports</h2>
+            <p>Fun and engaging toys for all ages.</p>
+            <span class="price">$69.99</span>
+            <button>Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://cdn.zeptonow.com/production/cms/category/498eea73-358c-42c1-b482-158e80669be9.png" alt="Product 7">
+            <h2>Lifestyle</h2>
+            <p>Trendy and modern lifestyle products.</p>
+            <span class="price">$79.99</span>
+            <button>Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://cdn.zeptonow.com/production/cms/category/20d9687b-58a4-4bf7-a561-99198b4d5ca1.png" alt="Product 8">
+            <h2>Jewellery and Accessories</h2>
+            <p>Elegant jewellery and stylish accessories.</p>
+            <span class="price">$89.99</span>
+            <button>Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://cdn.zeptonow.com/production/cms/category/366e5b7d-2028-4935-b9f1-75bfa085c3d7.png" alt="Product 9">
+            <h2>Frozen Foods</h2>
+            <p>Delicious and convenient frozen food options.</p>
+            <span class="price">$99.99</span>
+            <button>Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://cdn.zeptonow.com/production/cms/category/db346f5e-644f-426a-85af-92d707e086ac.png" alt="Product 10">
+            <h2>Ice Cream</h2>
+            <p>Delicious and creamy ice cream in various flavors.</p>
+            <span class="price">$109.99</span>
+            <button>Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://cdn.zeptonow.com/production/cms/category/59d2c0cc-e776-407c-9142-7e69898d9eab.png" alt="Product 11">
+            <h2>Cold Drinks</h2>
+            <p>Refreshing cold drinks for all occasions.</p>
+            <span class="price">$119.99</span>
+            <button>Add to Cart</button>
+    </main>
+    <footer>
+        <p>&copy; 2023 My E-commerce Store</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+        <p>Contact us: <a href="mailto:support@myecommercestore.com">support@myecommercestore.com</a></p>
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shape Changer</title>
+    <style>
+        h1 {
+            border-width: 2px;
+            border-style: dashed;
+            border-color: red;
+            padding: 40px;
+            margin: 20px;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            background-color: lightgray;
+            color: black;
+            font-size: 24px;
+        }
+
+        h1:hover {
+            background-color:;
+            color: ;
+            border-color: darkred;
+        }
+
+        /* Shape Classes */
+        .rectangle {
+            width: 400px;
+            height: 200px;
+            border-radius: 0;
+            background-color: pink;
+            text-align: center;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: lightcoral;
+            text-align: center;
+        }
+
+        .ellipse {
+            width: 300px;
+            height: 150px;
+            border-radius: 50% / 30%;
+            background-color: lightblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="shapeBox">Hello, World!</h1>
+    </div>
+
+    <script>
+        const box = document.getElementById("shapeBox");
+        const shapes = ["square", "rectangle", "circle", "ellipse"];
+        let index = 0;
+
+        box.addEventListener("click", () => {
+            box.className = ""; // Remove previous shape
+            box.classList.add(shapes[index]); // Add new shape
+            index = (index + 1) % shapes.length; // Cycle to next shape
+        });
+    </script>
+</body> 
+</html>

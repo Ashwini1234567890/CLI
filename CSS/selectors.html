@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /*    Pseudo Class Selectors
+        
+        
+        a:active{
+            color: red;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: orange;
+        }
+        li:first-child{
+            color: yellow;
+        }
+        li:last-child{
+            color: purple;
+        }
+        li:nth-child(odd){
+            color: blue;
+        }
+*/
+  /*   Pseudo Element Selectors
+
+
+  h1::before{
+            content: "Welcome to ";
+            color: blue;
+        }
+        h1::after{
+            content: "!";
+            color: red;
+        }
+        p::first-letter{
+            font-size: 2em;
+            color: green;
+        }
+        p::first-line{
+            font-weight: bold;
+            color: purple;
+        }
+        b::marker{
+            color: orange;
+        }
+        input::placeholder{
+            color: pink;
+            font-style: italic;
+            font-size: 16px;
+            text-align: center;
+            background-color: green;
+            border: 1px solid black;
+        }
+            */
+
+       h1~p{
+           color: blue;
+       }
+        </style>
+</head>
+<body>
+    <section>
+    <h1>Hello, World!</h1>
+    <p>This is a simple HTML document with a linked CSS stylesheet.</p>
+    <p>This is another paragraph.</p>
+    <div>
+    <ol id="ol">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    </div>
+    </section>
+</body>
+</html>
